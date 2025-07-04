@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bảng định kiểu - CSS</title>
+    <!-- Cách 2: Nhúng CSS ở thẻ <head> -->
+    <style>
+        /* Class Seletor: áp dụng cho mọi phần tử có class = "highlight" */
+        .highlight {
+            color: purple;
+            font-weight: bold;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Cách 1: Nhúng CSS dạng Inline -->
     <h1 style="color: #d56407;">Chào mừng đến với Buổi 3</h1>
+
+    <h2>Bài thơ màu tím</h2>
+
+    <p style="color: green;">
+        Những chiều <span class="highlight">tím</span> mộng mơ<br>
+        Từng hàng cây đứng ngóng <br>
+        Cánh chim bay rất <span class="highlight">tím</span> <br>
+        Một màu trời lặng im
+    </p>
+
+    <!-- ID: định danh duy nhất cho từng phần tử HTML
+     Mỗi ID chỉ được dùng  1 LẦN trên 1 TRANG HTML
+     ID giống số CCCD của phần tử: mỗi người 1 số, không trùng -->
+
+    <!-- Class: là nhóm định dạng để áp dụng cho nhiều phần tử
+     1 Class có thể gán cho nhiều phần tử trong trang
+     Class giống ĐỒNG PHỤC: nhiều người mặc cùng 1 loại áo -->
+
+    <!-- Selector (bộ chọn) trong CSS dùng để chọn ra phần tử HTML cần định dạng -->
+    <!-- HTML Selector: Dùng cho tất cả các thẻ cùng tên. VD: p{ } 
+        Class Selector: Phần tử có Class cụ thể. VD: .menu { }
+        ID Selector: 1 phần tử có ID cụ thể. VD: #header { }
+        Group Selector: Nhiều phần tử. VD: h1, p { }
+        Descendant Selector: Phần tử con trong phần tử cha. VD div p{ }-->
 </body>
+
 </html>
