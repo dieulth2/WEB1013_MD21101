@@ -7,26 +7,56 @@
     <title>Bảng định kiểu - CSS</title>
     <!-- Cách 2: Nhúng CSS ở thẻ <head> -->
     <style>
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            color: purple;
+        }
+
         /* Class Seletor: áp dụng cho mọi phần tử có class = "highlight" */
         .highlight {
             color: purple;
             font-weight: bold;
         }
     </style>
+
+    <!-- Cách 3: Nhũng CSS dạng External: Liên kết file HTML với 1 file CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Cách 1: Nhúng CSS dạng Inline -->
     <h1 style="color: #d56407;">Chào mừng đến với Buổi 3</h1>
 
-    <h2>Bài thơ màu tím</h2>
+    <div class="bai-tho-1">
+        <h2>Bài thơ màu tím</h2>
 
-    <p style="color: green;">
-        Những chiều <span class="highlight">tím</span> mộng mơ<br>
-        Từng hàng cây đứng ngóng <br>
-        Cánh chim bay rất <span class="highlight">tím</span> <br>
-        Một màu trời lặng im
-    </p>
+        <p style="color: green;">
+            Những chiều <span class="highlight">tím</span> mộng mơ<br>
+            Từng hàng cây đứng ngóng <br>
+            Cánh chim bay rất <span class="highlight">tím</span> <br>
+            Một màu trời lặng im
+        </p>
+    </div>
+
+    <div class="bai-tho-2">
+        <h2>Bài thơ màu tím</h2>
+
+        <p>
+            Những chiều tím mộng mơ<br>
+            Từng hàng cây đứng ngóng <br>
+            Cánh chim bay rất tím <br>
+            Một màu trời lặng im
+        </p>
+    </div>
+    <hr>
+    <div id="footer">
+        <p>Đây là một <a href="#">Liên kết đến Google</a></p>
+        <p>Đây là một <a href="https://github.com/dieulth2/WEB1013_MD21101">Liên kết đến Github môn học</a></p>
+
+    </div>
 
     <!-- ID: định danh duy nhất cho từng phần tử HTML
      Mỗi ID chỉ được dùng  1 LẦN trên 1 TRANG HTML

@@ -1,0 +1,12 @@
+#footer{
+    background-color: #f4f4f4;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Định dạng liên kết ở các trạng thái khác nhau */
+a:hover{
+    color: chocolate;
+}
