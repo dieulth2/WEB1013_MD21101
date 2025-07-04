@@ -1,9 +1,12 @@
 #footer{
+    /* Màu nền */
     background-color: #f4f4f4;
+    /* Căn giữa chữ */
     text-align: center;
 }
 
 a{
+    /* Bỏ gạch chân của Liên kết (thẻ a) */
     text-decoration: none;
 }
 
